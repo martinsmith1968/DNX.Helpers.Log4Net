@@ -64,10 +64,31 @@
   </Choose>
   <ItemGroup>
     <Compile Include="LogExtensionsTests.cs" />
+    <Compile Include="LogExtensionsTests.Debug.generated.cs">
+      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensionsTests.Error.generated.cs">
+      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensionsTests.Fatal.generated.cs">
+      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensionsTests.Info.generated.cs">
+      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensionsTests.Warn.generated.cs">
+      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensionsTests1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    </Compile>
     <Compile Include="LogManagerExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="MultipleOutputHelper.ttinclude" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +96,15 @@
       <Project>{61EB307E-F9C3-422C-881B-2A855684E33B}</Project>
       <Name>DNX.Helpers.Log4Net</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogExtensionsTests.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LogExtensionsTests1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

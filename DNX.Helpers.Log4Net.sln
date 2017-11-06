@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.DNX.Helpers.Log4Net", "Test.DNX.Helpers.Log4Net\Test.DNX.Helpers.Log4Net.csproj", "{75959401-AAAC-4C20-9415-7E42C5984D7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{96E95A43-A8B6-49DE-8CD1-71C8E808D1C0}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{89060D1F-25CA-4544-9F74-FE3EA4B26DBF}"
 	ProjectSection(SolutionItems) = preProject

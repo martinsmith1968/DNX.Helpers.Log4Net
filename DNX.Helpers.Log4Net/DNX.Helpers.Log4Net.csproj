@@ -39,13 +39,42 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LogExtensions.cs" />
+    <Compile Include="LogExtensions.Debug.generated.cs">
+      <DependentUpon>LogExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensions.Error.generated.cs">
+      <DependentUpon>LogExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensions.Fatal.generated.cs">
+      <DependentUpon>LogExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensions.Info.generated.cs">
+      <DependentUpon>LogExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensions.Warn.generated.cs">
+      <DependentUpon>LogExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogExtensions1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogExtensions.tt</DependentUpon>
+    </Compile>
     <Compile Include="LogManagerExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DNX.Helpers.Log4Net.nuspec" />
+    <None Include="MultipleOutputHelper.ttinclude" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogExtensions.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LogExtensions1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
