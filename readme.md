@@ -62,5 +62,5 @@ By Martin Smith, 2001 onwards
 
 | Project | Location |
 | --- | --- |
-| [DNX.Helpers](http://github.com/martinsmith1968/DNX.Helpers){:target="_blank"} | General purpose .NET standard library helpers |
-| [DNX.Helpers.Console](http://github.com/martinsmith1968/DNX.Helpers.Console){:target="_blank"} | For working with console applications. Includes CommandLine parser support |
+| [DNX.Helpers](http://github.com/martinsmith1968/DNX.Helpers) | General purpose .NET standard library helpers |
+| [DNX.Helpers.Console](http://github.com/martinsmith1968/DNX.Helpers.Console) | For working with console applications. Includes CommandLine parser support |
