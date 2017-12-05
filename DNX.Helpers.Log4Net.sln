@@ -9,14 +9,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.DNX.Helpers.Log4Net", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{96E95A43-A8B6-49DE-8CD1-71C8E808D1C0}"
 	ProjectSection(SolutionItems) = preProject
+		licence.txt = licence.txt
 		readme.md = readme.md
+		todo.md = todo.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{89060D1F-25CA-4544-9F74-FE3EA4B26DBF}"
 	ProjectSection(SolutionItems) = preProject
+		commands.json = commands.json
 		GenerateMarkdown.cmd = GenerateMarkdown.cmd
 		NuGet.Package.cmd = NuGet.Package.cmd
 		NuGet.publish.cmd = NuGet.publish.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{687D2E0B-09B7-4186-AA6C-D77A93525C5B}"
+	ProjectSection(SolutionItems) = preProject
+		Reference\reference.md = Reference\reference.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A2C77026-ED23-48A9-BFF2-F3782602AD3F}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Index.md = Docs\Index.md
+		Docs\Log4Net.md = Docs\Log4Net.md
 	EndProjectSection
 EndProject
 Global
@@ -39,5 +53,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89060D1F-25CA-4544-9F74-FE3EA4B26DBF} = {96E95A43-A8B6-49DE-8CD1-71C8E808D1C0}
+		{687D2E0B-09B7-4186-AA6C-D77A93525C5B} = {96E95A43-A8B6-49DE-8CD1-71C8E808D1C0}
+		{A2C77026-ED23-48A9-BFF2-F3782602AD3F} = {96E95A43-A8B6-49DE-8CD1-71C8E808D1C0}
 	EndGlobalSection
 EndGlobal

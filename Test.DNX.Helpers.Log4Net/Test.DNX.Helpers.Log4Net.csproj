@@ -37,22 +37,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.4.2.0\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Moq, Version=4.7.137.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moq.4.7.137\lib\net45\Moq.dll</HintPath>
+    <Reference Include="Moq, Version=4.7.145.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.145\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -63,28 +64,27 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="LogExtensionsTests.cs" />
-    <Compile Include="LogExtensionsTests.Debug.generated.cs">
-      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    <Compile Include="ILogExtensionsTests.Debug.generated.cs">
+      <DependentUpon>ILogExtensionsTests.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogExtensionsTests.Error.generated.cs">
-      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    <Compile Include="ILogExtensionsTests.Error.generated.cs">
+      <DependentUpon>ILogExtensionsTests.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogExtensionsTests.Fatal.generated.cs">
-      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    <Compile Include="ILogExtensionsTests.Fatal.generated.cs">
+      <DependentUpon>ILogExtensionsTests.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogExtensionsTests.Info.generated.cs">
-      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    <Compile Include="ILogExtensionsTests.Info.generated.cs">
+      <DependentUpon>ILogExtensionsTests.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogExtensionsTests.Warn.generated.cs">
-      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+    <Compile Include="ILogExtensionsTests.Warn.generated.cs">
+      <DependentUpon>ILogExtensionsTests.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogExtensionsTests1.cs">
+    <Compile Include="ILogExtensionsTests.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogExtensionsTests.tt</DependentUpon>
+      <DependentUpon>ILogExtensionsTests.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogManagerExtensionsTests.cs" />
+    <Compile Include="LogManagerHelperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -98,9 +98,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LogExtensionsTests.tt">
+    <Content Include="ILogExtensionsTests.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LogExtensionsTests1.cs</LastGenOutput>
+      <LastGenOutput>ILogExtensionsTests.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
