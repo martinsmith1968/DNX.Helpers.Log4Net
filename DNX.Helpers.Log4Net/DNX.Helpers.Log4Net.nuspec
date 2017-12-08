@@ -16,5 +16,8 @@
     <releaseNotes>Initial release</releaseNotes>
     <copyright>Copyright 2017 DNX Solutions Ltd</copyright>
     <tags>DNX helpers extensions Log4Net</tags>
+    <dependencies>
+      <dependency id="log4net" version="2.0.8" />
+    </dependencies>
   </metadata>
 </package>
