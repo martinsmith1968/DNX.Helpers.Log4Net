@@ -3,9 +3,9 @@
 ![DNX Solutions Logo](http://dnx-solutions.co.uk/favicon-32x32.png)
 [DNX.Helpers.Log4Net](http://github.com/martinsmith1968/DNX.Helpers.Log4Net) is a .NET package that contains the bits that make working with Log4Net that little bit more pleasant.
 
-It is designed around the premise that code should be as readable as possible at the highest level possible.
+It is designed to make your code should as readable as possible at the highest level possible.
 
-E.g. Replaces the repetitive and potentially erroneous:
+E.g. Replaces the repetitive code below (which has the potential to become out of step):
 
 ```csharp
 if (logger.IsDebugEnabled)
@@ -20,7 +20,7 @@ with
 logger.DebugFunc(() => string.Format("The value is {0}", x));
 ```
 
-Which will only evaluate the Func if Debug is enabled
+Which will only evaluate the Func and output the result, if Debug is enabled
 
 ### Installation
 
@@ -34,7 +34,7 @@ Helpers are divided into the following namespaces:
 
 | Namespace | Descripion |
 | --- | --- |
-| [Log4Net](Docs/Log4Net.md) | Classes to help with working with Log4Net |
+| [main](Docs/Log4Net.md) | Classes to help with working with Log4Net |
 
 Also, check out the [Unit Test](Test.DNX.Helpers.Log4Net) project for some usage examples.
 
